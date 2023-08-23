@@ -1,0 +1,25 @@
+[project]
+name = "llm-anyscale-endpoints"
+version = "0.1"
+description = " LLM plugin for models hosted by Anyscale Endpoints"
+readme = "README.md"
+authors = [{name = "Simon Willison"}]
+license = {text = "Apache-2.0"}
+classifiers = [
+    "License :: OSI Approved :: Apache Software License"
+]
+dependencies = [
+    "llm>=0.8",
+]
+
+[project.urls]
+Homepage = "https://github.com/simonw/llm-anyscale-endpoints"
+Changelog = "https://github.com/simonw/llm-anyscale-endpoints/releases"
+Issues = "https://github.com/simonw/llm-anyscale-endpoints/issues"
+CI = "https://github.com/simonw/llm-anyscale-endpoints/actions"
+
+[project.entry-points.llm]
+anyscale_endpoints = "llm_anyscale_endpoints"
+
+[project.optional-dependencies]
+test = ["pytest", "pytest-httpx"]

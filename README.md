@@ -50,9 +50,10 @@ You can set a shorter alias for a model using the `llm aliases` command like so:
 ```bash
 llm aliases set llama70b meta-llama/Llama-2-70b-chat-hf
 ```
-Now you can prompt Claude using:
+Now you can prompt Llama 2 70B using:
 ```bash
-cat llm_anyscale_endpoints.py | llm -m llama70b -s 'explain this code'
+cat llm_anyscale_endpoints.py | \
+  llm -m llama70b -s 'explain this code'
 ```
 ## Development
 

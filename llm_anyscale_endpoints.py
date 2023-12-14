@@ -6,7 +6,8 @@ MODELS = (
     "meta-llama/Llama-2-13b-chat-hf",
     "meta-llama/Llama-2-70b-chat-hf",
     "codellama/CodeLlama-34b-Instruct-hf",
-    "mistralai/Mistral-7B-Instruct-v0.1"
+    "mistralai/Mistral-7B-Instruct-v0.1",
+    "mistralai/Mixtral-8x7B-Instruct-v0.1",
 )
 
 

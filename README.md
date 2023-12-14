@@ -41,6 +41,9 @@ AnyscaleEndpoints: meta-llama/Llama-2-13b-chat-hf
 AnyscaleEndpoints: meta-llama/Llama-2-70b-chat-hf
 AnyscaleEndpoints: codellama/CodeLlama-34b-Instruct-hf
 AnyscaleEndpoints: mistralai/Mistral-7B-Instruct-v0.1
+AnyscaleEndpoints: mistralai/Mixtral-8x7B-Instruct-v0.1
+AnyscaleEndpoints: Open-Orca/Mistral-7B-OpenOrca
+AnyscaleEndpoints: HuggingFaceH4/zephyr-7b-beta
 ```
 To run a prompt against a model, pass its full model ID to the `-m` option, like this:
 ```bash

@@ -9,6 +9,7 @@ MODELS = (
     "mistralai/Mistral-7B-Instruct-v0.1",
     "mistralai/Mixtral-8x7B-Instruct-v0.1",
     "Open-Orca/Mistral-7B-OpenOrca",
+    "HuggingFaceH4/zephyr-7b-beta",
 )
 
 

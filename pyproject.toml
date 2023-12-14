@@ -1,6 +1,6 @@
 [project]
 name = "llm-anyscale-endpoints"
-version = "0.3"
+version = "0.4"
 description = " LLM plugin for models hosted by Anyscale Endpoints"
 readme = "README.md"
 authors = [{name = "Simon Willison"}]

@@ -38,28 +38,36 @@ You should see a list that looks something like this:
 ```
 AnyscaleEndpoints: meta-llama/Llama-2-7b-chat-hf
 AnyscaleEndpoints: meta-llama/Llama-2-13b-chat-hf
-AnyscaleEndpoints: meta-llama/Llama-2-70b-chat-hf
-AnyscaleEndpoints: codellama/CodeLlama-34b-Instruct-hf
-AnyscaleEndpoints: mistralai/Mistral-7B-Instruct-v0.1
 AnyscaleEndpoints: mistralai/Mixtral-8x7B-Instruct-v0.1
-AnyscaleEndpoints: Open-Orca/Mistral-7B-OpenOrca
-AnyscaleEndpoints: HuggingFaceH4/zephyr-7b-beta
+AnyscaleEndpoints: mistralai/Mistral-7B-Instruct-v0.1
+AnyscaleEndpoints: meta-llama/Llama-2-70b-chat-hf
+AnyscaleEndpoints: codellama/CodeLlama-70b-Instruct-hf
+AnyscaleEndpoints: mistralai/Mixtral-8x22B-Instruct-v0.1
+AnyscaleEndpoints: mlabonne/NeuralHermes-2.5-Mistral-7B
+AnyscaleEndpoints: google/gemma-7b-it
 ```
 To run a prompt against a model, pass its full model ID to the `-m` option, like this:
 ```bash
-llm -m meta-llama/Llama-2-70b-chat-hf \
+llm -m mistralai/Mixtral-8x22B-Instruct-v0.1 \
   'Five strident names for a pet walrus' \
   --system 'You love coming up with creative names for pets'
 ```
 You can set a shorter alias for a model using the `llm aliases` command like so:
 ```bash
-llm aliases set llama70b meta-llama/Llama-2-70b-chat-hf
+llm aliases set mix22b mistralai/Mixtral-8x22B-Instruct-v0.1
 ```
-Now you can prompt Llama 2 70B using:
+Now you can prompt Mixtral-8x22B-Instruct-v0.1 using the alias `mix22b`:
 ```bash
 cat llm_anyscale_endpoints.py | \
-  llm -m llama70b -s 'explain this code'
+  llm -m mix22b -s 'explain this code'
 ```
+
+You can refresh the list of models by running:
+```bash
+llm anyscale-endpoints refresh
+```
+This will fetch the latest list of models from Anyscale Endpoints and story it in a local cache file.
+
 ## Development
 
 To set up this plugin locally, first checkout the code. Then create a new virtual environment:

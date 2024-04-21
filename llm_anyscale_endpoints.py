@@ -5,15 +5,17 @@ import llm
 from llm.default_plugins.openai_models import Chat
 
 MODELS = (
-    "codellama/CodeLlama-70b-Instruct-hf",
-    "google/gemma-7b-it",
-    "meta-llama/Llama-2-13b-chat-hf",
-    "meta-llama/Llama-2-70b-chat-hf",
     "meta-llama/Llama-2-7b-chat-hf",
-    "mistralai/Mistral-7B-Instruct-v0.1",
-    "mistralai/Mixtral-8x22B-Instruct-v0.1",
+    "meta-llama/Llama-2-13b-chat-hf",
     "mistralai/Mixtral-8x7B-Instruct-v0.1",
+    "mistralai/Mistral-7B-Instruct-v0.1",
+    "meta-llama/Llama-2-70b-chat-hf",
+    "meta-llama/Llama-3-8b-chat-hf",
+    "meta-llama/Llama-3-70b-chat-hf",
+    "codellama/CodeLlama-70b-Instruct-hf",
+    "mistralai/Mixtral-8x22B-Instruct-v0.1",
     "mlabonne/NeuralHermes-2.5-Mistral-7B",
+    "google/gemma-7b-it"
 )
 
 

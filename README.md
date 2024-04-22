@@ -41,6 +41,8 @@ AnyscaleEndpoints: meta-llama/Llama-2-13b-chat-hf
 AnyscaleEndpoints: mistralai/Mixtral-8x7B-Instruct-v0.1
 AnyscaleEndpoints: mistralai/Mistral-7B-Instruct-v0.1
 AnyscaleEndpoints: meta-llama/Llama-2-70b-chat-hf
+AnyscaleEndpoints: meta-llama/Llama-3-8b-chat-hf
+AnyscaleEndpoints: meta-llama/Llama-3-70b-chat-hf
 AnyscaleEndpoints: codellama/CodeLlama-70b-Instruct-hf
 AnyscaleEndpoints: mistralai/Mixtral-8x22B-Instruct-v0.1
 AnyscaleEndpoints: mlabonne/NeuralHermes-2.5-Mistral-7B
